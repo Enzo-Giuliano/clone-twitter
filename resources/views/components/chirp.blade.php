@@ -22,12 +22,12 @@
             <div class="min-w-0 flex-1">
                 <div class="flex justify-between w-full">
                     <div class="flex items-center gap-1">
-                        <span class="text-sm font-semibold">{{ $chirp->user ? $chirp->user->name : 'Anonymous' }}</span>
+                        <span class="text-sm font-semibold">{{ $chirp->user ? $chirp->user->name : 'Anônimo' }}</span>
                         <span class="text-base-content/60">·</span>
                         <span class="text-sm text-base-content/60">{{ $chirp->created_at->diffForHumans() }}</span>
                         @if ($chirp->updated_at->gt($chirp->created_at->addSeconds(5)))
                             <span class="text-base-content/60">·</span>
-                            <span class="text-sm text-base-content/60 italic">edited</span>
+                            <span class="text-sm text-base-content/60 italic">editado</span>
                         @endif
                     </div>
 
@@ -41,7 +41,7 @@
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit"
-                                    onclick="return confirm('Are you sure you want to delete this chirp?')"
+                                    onclick="return confirm('Tem certeza que deseja excluir esta pluma?')"
                                     class="btn btn-ghost btn-xs text-error">
                                     Delete
                                 </button>

@@ -1,13 +1,13 @@
 <x-layout>
     <x-slot:title>
-        Register
+        Registro
     </x-slot:title>
 
     <div class="hero min-h-[calc(100vh-16rem)]">
         <div class="hero-content flex-col">
             <div class="card w-96 bg-base-100">
                 <div class="card-body">
-                    <h1 class="text-xl mt-1 font-bold text-center mb-6">Create Account</h1>
+                    <h1 class="text-xl mt-1 font-bold text-center mb-6">Criar Conta</h1>
 
                     <form method="POST" action="/register">
                         @csrf
@@ -16,11 +16,11 @@
                         <label class="floating-label mb-6">
                             <input type="text"
                                    name="name"
-                                   placeholder="John Doe"
+                                   placeholder="Super Mario"
                                    value="{{ old('name') }}"
                                    class="input input-bordered @error('name') input-error @enderror"
                                    required>
-                            <span>Name</span>
+                            <span>Nome</span>
                         </label>
                         @error('name')
                             <div class="label -mt-4 mb-2">
@@ -32,7 +32,7 @@
                         <label class="floating-label mb-6">
                             <input type="email"
                                    name="email"
-                                   placeholder="[mail@example.com](<mailto:mail@example.com>)"
+                                   placeholder="super.mario@exemplo.com"
                                    value="{{ old('email') }}"
                                    class="input input-bordered @error('email') input-error @enderror"
                                    required>
@@ -51,7 +51,7 @@
                                    placeholder="••••••••"
                                    class="input input-bordered @error('password') input-error @enderror"
                                    required>
-                            <span>Password</span>
+                            <span>Senha</span>
                         </label>
                         @error('password')
                             <div class="label -mt-4 mb-2">
@@ -66,21 +66,21 @@
                                    placeholder="••••••••"
                                    class="input input-bordered"
                                    required>
-                            <span>Confirm Password</span>
+                            <span>Confirmar Senha</span>
                         </label>
 
                         <!-- Submit Button -->
                         <div class="form-control mt-8">
                             <button type="submit" class="btn btn-primary btn-sm w-full">
-                                Register
+                                Registrar
                             </button>
                         </div>
                     </form>
 
-                    <div class="divider">OR</div>
+                    <div class="divider">OU</div>
                     <p class="text-center text-sm">
-                        Already have an account?
-                        <a href="/login" class="link link-primary">Sign in</a>
+                        Já tem uma conta?
+                        <a href="/login" class="link link-primary">Entrar</a>
                     </p>
                 </div>
             </div>

@@ -29,9 +29,9 @@
 
   /* Canvas + text (neutral / cooler beige balance) */
   --color-base-50:  #fafafa;  /* almost pure white, very faint gray */
-  --color-base-100: #f7f7f8;  /* neutral canvas */
-  --color-base-200: #ededee;  /* light neutral gray (still contrasty w/ border) */
-  --color-base-300: #e0e1e3;  /* mid gray, cooler but not blue */
+  --color-base-100: #f5a7ee;  /* neutral canvas */
+  --color-base-200: #fad8f7;  /* light neutral gray (still contrasty w/ border) */
+  --color-base-300: #e3e0e2;  /* mid gray, cooler but not blue */
   --color-base-content: #1a1a1c; /* neutral dark, softer than #111113 */
 
   /* Text tones */
@@ -39,11 +39,11 @@
   --text-10: color-mix(in oklab, var(--color-base-content) 64%, transparent);
 
   /* Brand / actions */
-  --color-primary: #5580d2;            /* cooler button blue */
+  --color-primary: #7a0366;            /* cooler button blue */
   --color-primary-content: #ffffff;
   --color-secondary: #2f3136;          /* neutral charcoal */
   --color-secondary-content: #ffffff;
-  --link: #5580d2;
+  --link: #55b5d2;
   --link-hover: color-mix(in oklab, #5580d2 80%, black);
 
   /* Borders / elevation */
@@ -68,6 +68,37 @@
 html[data-theme="laravelChirper"],
 :root:has(input.theme-controller[value=laravelChirper]:checked) body {
     color: var(--text-12);
+
+    background-image: url('/public/images/fundoPlumage.png')!important;;
+    background-size: cover;        /* cobre toda a tela */
+    background-position: center;   /* centraliza */
+    background-repeat: no-repeat;  /* evita repetição */
+    background-attachment: fixed; /* efeito parallax (opcional) */
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: url('/public/images/fundoPlumage.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.logo-navbar {
+    height: 70px;              /* controla o tamanho */
+    width: auto;
+    object-fit: contain;
+
+    /* opcional — deixa mais elegante */
+    opacity: 0.9;
+    transition: all 0.2s ease;
+}
+
+/* efeito hover leve */
+.logo-navbar:hover {
+    opacity: 1;
+    transform: scale(1.05);
 }
 
 /* Navbar = sand + hairline bottom */
@@ -105,7 +136,7 @@ html[data-theme="laravelChirper"],
 :where(.input, .textarea) {
     border-radius: var(--radius-field);
     border: var(--border) solid var(--border-color-soft);
-    background: #fff;
+    background: #f5e8f3;
 }
 
 /* reduce default textarea padding a touch */

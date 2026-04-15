@@ -1,10 +1,10 @@
 <x-layout>
     <x-slot:title>
-        Edit Chirp
+        Editar Pluma
     </x-slot:title>
 
     <div class="max-w-2xl mx-auto">
-        <h1 class="text-3xl font-bold mt-8">Edit Chirp</h1>
+        <h1 class="text-3xl font-bold mt-8">Editar Pluma</h1>
 
         <div class="card bg-base-100 mt-8">
             <div class="card-body">
@@ -30,10 +30,10 @@
 
                     <div class="card-actions justify-between mt-4">
                         <a href="/" class="btn btn-ghost btn-sm">
-                            Cancel
+                            Cancelar
                         </a>
                         <button type="submit" class="btn btn-primary btn-sm">
-                            Update Chirp
+                            Atualizar Pluma
                         </button>
                     </div>
                 </form>
