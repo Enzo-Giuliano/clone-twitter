@@ -155,3 +155,52 @@ resources/
 
 database/
  ├── migrations/ -->
+
+🚀 Como executar o projeto
+📋 Pré-requisitos
+•	PHP 8+ 
+•	Composer 
+•	MySQL 
+•	Node.js + NPM 
+________________________________________
+# ▶️ Instalação
+### Clonar repositório
+git clone https://github.com/Enzo-Giuliano/clone-twitter.git
+
+cd clone-twitter
+
+### Instalar dependências
+composer install
+
+### Configurar ambiente
+cp .env.example .env
+
+### Gerar chave
+php artisan key:generate
+
+### Configurar banco no .env
+
+### Rodar migrations
+php artisan migrate
+
+### Front-end
+npm install
+npm run dev
+
+### Rodar servidor
+php artisan serve
+________________________________________
+### 💡 Como usar
+1.	Acesse: http://127.0.0.1:8000 
+2.	Crie uma conta 
+3.	Faça login 
+4.	Publique um tweet 
+5.	Veja o feed atualizado 
+________________________________________
+### 📚 Conclusão
+Este projeto foi fundamental para consolidar conhecimentos em Laravel, permitindo entender como aplicações reais são construídas.
+A implementação de um clone do Twitter possibilitou trabalhar com:
+•	CRUD completo 
+•	Autenticação 
+•	Relacionamentos entre entidades 
+•	Organização de código em larga escala 
