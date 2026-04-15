@@ -156,14 +156,14 @@ resources/
 database/
  ├── migrations/ -->
 
-🚀 Como executar o projeto
-📋 Pré-requisitos
-•	PHP 8+ 
-•	Composer 
-•	MySQL 
-•	Node.js + NPM 
+## 🚀 Como executar o projeto
+### 📋 Pré-requisitos
+- PHP 8+ 
+- Composer 
+- MySQL 
+- Node.js + NPM 
 ________________________________________
-# ▶️ Instalação
+## ▶️ Instalação
 ### Clonar repositório
 git clone https://github.com/Enzo-Giuliano/clone-twitter.git
 
