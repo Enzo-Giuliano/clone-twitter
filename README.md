@@ -56,3 +56,102 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+
+<!-- Descrição do projeto: -->
+
+# 🐦 Clone do Twitter com Laravel (Plumage)
+
+## 📌 Sobre o projeto
+
+Este projeto é um clone simplificado do Twitter (X), desenvolvido utilizando o framework Laravel, com foco em aprendizado prático dos conceitos fundamentais do desenvolvimento web moderno.
+
+A aplicação permite que usuários se autentiquem, criem publicações (tweets) e visualizem um feed com conteúdos, simulando o comportamento básico de uma rede social.
+
+---
+
+## 🎯 Objetivo do projeto
+
+O principal objetivo foi aplicar, na prática, os conceitos ensinados na documentação oficial do Laravel, construindo uma aplicação completa com:
+
+- Backend estruturado com MVC  
+- Sistema de autenticação  
+- Integração com banco de dados  
+- Funcionalidades reais de uma rede social  
+
+---
+
+## 🧠 Principais aprendizados
+
+Durante o desenvolvimento deste projeto, foram consolidados conhecimentos importantes:
+
+### 🔹 Estrutura MVC (Model-View-Controller)
+- Separação clara de responsabilidades
+- Organização escalável do código
+
+### 🔹 Rotas
+- Mapeamento de URLs para ações da aplicação
+- Uso de rotas protegidas com autenticação
+
+### 🔹 Controllers
+- Centralização da lógica da aplicação
+- Manipulação de requisições e respostas
+
+### 🔹 Eloquent ORM
+- Abstração do banco de dados
+- Manipulação de dados com modelos
+
+### 🔹 Relacionamentos
+- Relação entre usuários e posts
+- Uso de `hasMany` e `belongsTo`
+
+### 🔹 Autenticação
+- Registro e login de usuários
+- Controle de acesso com middleware
+
+### 🔹 Migrations
+- Criação e versionamento do banco de dados
+
+---
+
+## ⚙️ Funcionalidades
+
+### 👤 Usuários
+- Cadastro de conta
+- Login e logout
+- Sessões autenticadas
+
+### 📝 Tweets (Posts)
+- Criação de posts
+- Listagem de posts no feed
+- Associação de posts com usuários
+
+### 📰 Feed
+- Exibição de posts em ordem cronológica
+- Carregamento dinâmico via banco de dados
+
+---
+
+<!--## 🏗️ Estrutura do projeto
+
+```bash
+app/
+ ├── Models/
+ │    ├── User.php
+ │    ├── Post.php
+ │
+ ├── Http/
+ │    ├── Controllers/
+ │         ├── PostController.php
+
+routes/
+ ├── web.php
+
+resources/
+ ├── views/
+ │    ├── posts/
+ │    ├── layouts/
+
+database/
+ ├── migrations/ -->
