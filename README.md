@@ -200,7 +200,7 @@ ________________________________________
 ### 📚 Conclusão
 Este projeto foi fundamental para consolidar conhecimentos em Laravel, permitindo entender como aplicações reais são construídas.
 A implementação de um clone do Twitter possibilitou trabalhar com:
-•	CRUD completo 
-•	Autenticação 
-•	Relacionamentos entre entidades 
-•	Organização de código em larga escala 
+- CRUD completo 
+- Autenticação 
+- Relacionamentos entre entidades 
+- Organização de código em larga escala 
